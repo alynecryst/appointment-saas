@@ -1,0 +1,13 @@
+import { Logger } from '@nestjs/common';
+
+export class AppLogger extends Logger {
+
+  log(message: string) {
+    super.log(message);
+  }
+
+  error(message: string, trace?: string) {
+    super.error(message, trace);
+  }
+
+}
